@@ -1,0 +1,27 @@
+.lecture4 {
+    background-color: rgb(99, 25, 159);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    padding-top: 40px;
+    margin: 20px;
+}
+
+.Box2 {
+    background-color: rgb(24, 136, 128);
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(172, 34, 73);
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.AestheticImg img {
+    height: 100px;
+    width: 100px;
+}
+
+.AestheticImg p {
+    font-size: 100px;
+}
