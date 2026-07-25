@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Over and Mouse Out Event</title>
+
+    <style>
+        #myDiv {
+            width: 250px;
+            height: 150px;
+            background-color: rgb(89, 165, 190);
+            text-align: center;
+            line-height: 150px;
+            font-size: 22px;
+            font-weight: bold;
+            border: 2px solid rgb(248, 29, 189);
+            margin: 100px auto;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myDiv"
+         onmouseover="mouseOver()"
+         onmouseout="mouseOut()">
+    </div>
+
+    <script>
+        function mouseOver() {
+            let div = document.getElementById("myDiv");
+            div.style.backgroundColor = "violet";
+            div.innerHTML = "Mouse Over!";
+        }
+
+        function mouseOut() {
+            let div = document.getElementById("myDiv");
+            div.style.backgroundColor = "lightblue";
+            div.innerHTML = "Mouse Out!";
+        }
+    </script>
+
+</body>
+</html>
