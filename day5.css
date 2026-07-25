@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    height: 100px;
+    background-color: rgb(87, 165, 192);
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e82198;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
