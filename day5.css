@@ -1,22 +1,74 @@
-.container {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Previous Container */
+.container{
     display: flex;
     justify-content: space-between;
 }
-.box {
+
+.box{
     height: 100px;
-    background-color: rgb(87, 165, 192);
+    background-color: lightblue;
     justify-content: center;
 }
 
-.navbar {
+/* Navbar */
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #e82198;
+    background-color: #d99999;
 }
 
-.links {
+.links{
     display: flex;
     gap: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Services Section */
+.container-services{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    display: flex;
+    gap: 20px;
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.card{
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.card p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Part */
+@media (max-width: 768px){
+
+    .container-services{
+        flex-direction: column;
+    }
+
 }
