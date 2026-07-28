@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #fff0f5
+    );
+
+}
+
+
+/* ALL SLIDES */
+
+.slide {
+
+    height: 100vh;
+
+    width: 100%;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+}
+
+
+.active {
+
+    display: flex;
+
+}
+
+
+/* =========================
+   SLIDE 1 - CAKE
+========================= */
+
+
+.cake-slide h1 {
+
+    color: #d63384;
+
+    font-size: 42px;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* CAKE */
+
+.cake {
+
+    position: relative;
+
+    width: 260px;
+
+    height: 150px;
+
+    background: #e4e8dff9;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 20px #999999;
+
+}
+
+
+/* PINK TOP */
+
+.cake::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -35px;
+
+    left: 0;
+
+    width: 260px;
+
+    height: 50px;
+
+    background: #ffb6c1;
+
+    border-radius: 50%;
+
+}
+
+
+/* WHITE CREAM */
+
+.cream {
+
+    position: absolute;
+
+    top: -15px;
+
+    left: 0;
+
+    width: 260px;
+
+    height: 40px;
+
+    background: white;
+
+    border-radius: 50%;
+
+}
+
+
+/* CANDLE */
+
+.candle {
+
+    position: absolute;
+
+    top: -100px;
+
+    left: 115px;
+
+    width: 30px;
+
+    height: 70px;
+
+    background: #ff69b4;
+
+    border-radius: 5px;
+
+}
+
+
+/* FLAME */
+
+.flame {
+
+    position: absolute;
+
+    top: -45px;
+
+    left: 4px;
+
+    font-size: 35px;
+
+    animation: flame 0.7s infinite alternate;
+
+}
+
+
+@keyframes flame {
+
+    from {
+
+        transform: scale(1);
+
+    }
+
+    to {
+
+        transform: scale(1.3);
+
+    }
+
+}
+
+
+/* =========================
+   SLIDE 2 - BUBU DUDU
+========================= */
+
+
+.bubu-dudu {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* CHARACTERS */
+
+.character {
+
+    font-size: 130px;
+
+    animation: bounce 1.5s infinite;
+
+}
+
+
+.brown-character {
+
+    animation-delay: 0.2s;
+
+}
+
+
+/* KISS STICKER */
+
+.kiss {
+
+    position: absolute;
+
+    left: 48%;
+
+    top: 35%;
+
+    font-size: 45px;
+
+    animation: kissAnimation 1.5s infinite;
+
+}
+
+
+/* BOUNCE */
+
+@keyframes bounce {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-20px);
+
+    }
+
+}
+
+
+/* KISS ANIMATION */
+
+@keyframes kissAnimation {
+
+    0%,
+    100% {
+
+        transform: scale(0);
+
+        opacity: 0;
+
+    }
+
+    50% {
+
+        transform: scale(1.4);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* HEARTS */
+
+.hearts {
+
+    font-size: 35px;
+
+}
+
+
+/* =========================
+   SLIDE 3 - NAME
+========================= */
+
+
+.name-slide h1 {
+
+    color: #d63384;
+
+    font-size: 55px;
+
+    animation: zoom 1.5s infinite alternate;
+
+}
+
+
+.name-slide p {
+
+    font-size: 25px;
+
+    margin-top: 20px;
+
+    color: #555;
+
+}
+
+
+/* NAME ANIMATION */
+
+@keyframes zoom {
+
+    from {
+
+        transform: scale(1);
+
+    }
+
+    to {
+
+        transform: scale(1.1);
+
+    }
+
+}
+
+
+/* =========================
+   SLIDE 4 - URDU MESSAGE
+========================= */
+
+
+.urdu-message {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px #bbb;
+
+    max-width: 750px;
+
+}
+
+
+.urdu-message h1 {
+
+    color: #d63384;
+
+    margin-bottom: 25px;
+
+}
+
+
+.urdu-message p {
+
+    font-size: 28px;
+
+    line-height: 2;
+
+    direction: rtl;
+
+}
+
+
+/* =========================
+   SLIDE 5 - ENGLISH MESSAGE
+========================= */
+
+
+.english-message {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px #bbb;
+
+    max-width: 750px;
+
+}
+
+
+.english-message h1 {
+
+    color: #d63384;
+
+    margin-bottom: 25px;
+
+}
+
+
+.english-message p {
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: #555;
+
+}
+
+
+.english-message .hearts {
+
+    font-size: 35px;
+
+    margin-top: 20px;
+
+}

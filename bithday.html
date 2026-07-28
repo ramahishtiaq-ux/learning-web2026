@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Umar Ahmad</title>
+
+    <link rel="stylesheet" href="birthday.css">
+</head>
+
+<body>
+
+    <!-- SLIDE 1: CAKE -->
+
+    <section class="slide cake-slide active">
+
+        <h1>🎉 Happy Birthday 🎉</h1>
+
+        <div class="cake">
+
+            <div class="cream"></div>
+
+            <div class="candle">
+                <div class="flame">🔥</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SLIDE 2: CUTE WHITE AND BROWN CHARACTERS -->
+
+    <section class="slide">
+
+        <div class="bubu-dudu">
+
+            <!-- White character -->
+
+            <div class="character white-character">
+                🐻‍❄️
+            </div>
+
+            <!-- Brown character -->
+
+            <div class="character brown-character">
+                🐻
+            </div>
+
+            <!-- Only kiss sticker -->
+
+            <div class="kiss">
+                💋
+            </div>
+
+        </div>
+
+        <div class="hearts">
+            🤍 🤎
+        </div>
+
+    </section>
+
+
+    <!-- SLIDE 3: NAME -->
+
+    <section class="slide name-slide">
+
+        <h1>🎂 Umar Ahmad 🎂</h1>
+
+        <p>✨ It's your special day! ✨</p>
+
+    </section>
+
+
+    <!-- SLIDE 4: URDU MESSAGE -->
+
+    <section class="slide">
+
+        <div class="urdu-message">
+
+            <h1>🎉 سالگرہ مبارک، میرے دوست! 🎂</h1>
+
+            <p>
+
+                دوستی کی خوشبو ہمیشہ مہکتی رہے،<br>
+
+                تیری ہر دعا حقیقت بنتی رہے۔<br>
+
+                سالگرہ پر یہی دعا ہے میری،<br>
+
+                تیری ہر صبح مسکراہٹ سے سجی رہے۔
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SLIDE 5: ENGLISH MESSAGE -->
+
+    <section class="slide">
+
+        <div class="english-message">
+
+            <h1>🎉 Happy Birthday, My Dear Friend! 🎂</h1>
+
+            <p>
+
+                Wishing you a day filled with happiness,
+                laughter, and unforgettable memories.
+
+                <br><br>
+
+                Thank you for always being there.
+
+                May this year bring you success, good health,
+                and everything you've been wishing for.
+
+                <br><br>
+
+                Have an amazing birthday! 🎉
+
+            </p>
+
+            <div class="hearts">
+                💖 🎂 🎁 🎉 💖
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        let slides = document.querySelectorAll(".slide");
+
+        let currentSlide = 0;
+
+        function showNextSlide() {
+
+            slides[currentSlide].classList.remove("active");
+
+            currentSlide++;
+
+            if (currentSlide >= slides.length) {
+
+                currentSlide = 0;
+
+            }
+
+            slides[currentSlide].classList.add("active");
+
+        }
+
+        // Har 4 seconds baad next slide
+
+        setInterval(showNextSlide, 4000);
+
+    </script>
+
+</body>
+
+</html>
