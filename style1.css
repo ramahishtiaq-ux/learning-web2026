@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body{
+    font-family: Arial, sans-serif;
+    color: #212529;
+}
+
+
+/* Navbar */
+
+.navbar{
+    padding: 15px 0;
+}
+
+.navbar-brand{
+    font-size: 22px;
+}
+
+.nav-link{
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.nav-link.active{
+    font-weight: bold;
+    border-bottom: 2px solid #0d6efd;
+}
+
+
+/* Hero Section */
+
+.hero{
+    background-color: #f1f3f6;
+    padding: 70px 0;
+}
+
+.hero h1{
+    font-size: 34px;
+}
+
+.hero h4{
+    color: #495057;
+}
+
+
+/* About Section */
+
+.about-section{
+    padding: 75px 0;
+}
+
+.about-text{
+    max-width: 650px;
+    line-height: 1.7;
+    color: #495057;
+}
+
+
+/* Skills Section */
+
+.skills-section{
+    background-color: #f1f3f6;
+    padding: 75px 0;
+}
+
+.skill-card{
+    border: none;
+    padding: 20px;
+
+    box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.08);
+}
+
+.skill-card:hover{
+    transform: translateY(-5px);
+
+    transition: 0.3s;
+}
+
+
+/* Projects Section */
+
+.projects-section{
+    padding: 75px 0;
+}
+
+.project-card{
+    overflow: hidden;
+}
+
+.project-card img{
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-card .card-body{
+    padding: 25px;
+}
+
+.badge{
+    margin-right: 5px;
+}
+
+
+/* Footer */
+
+footer{
+    margin: 0 50px;
+}
+
+footer p{
+    font-size: 14px;
+}
